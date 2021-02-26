@@ -16,3 +16,7 @@
     gap: 6.25;
     align-content: center;
 }
+
+.container section div {
+    margin: 1rem;
+}

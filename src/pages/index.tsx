@@ -1,10 +1,11 @@
-import styles from '../styles/pages/Home.module.css'
+import styles from '../styles/pages/Home.module.css';
 import { ExperienceBar } from "../components/ExperienceBar";
 import { Profile } from "../components/Profile";
 import { CompletedChanlleges } from '../components/CompletedChallenges';
 import { Countdown } from '../components/Coutdown';
 
 import Head from 'next/head'
+import { ChanllegeBox } from '../components/ChallengeBox';
 
 export default function Home() {
   return (
@@ -21,6 +22,7 @@ export default function Home() {
           <Countdown />
         </div>
         <div>
+          <ChanllegeBox />
         </div>
       </section>
     </div>

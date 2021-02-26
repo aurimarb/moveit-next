@@ -64,6 +64,22 @@
 
 }
 
-.coutdownButton:hover {
+.coutdownButton:not(:disabled):hover {
     background-color: var(--blue-dark);
+}
+
+.coutdownButtonActive {
+    background: var(--white);
+    color: var(--title);
+}
+
+.coutdownButtonActive:not(:disabled):hover {
+    background: var(--red);
+    color: var(--white);
+}
+
+.coutdownButton:disabled {
+    background: var(--white);
+    color: var(--text);
+    cursor: not-allowed;
 }
