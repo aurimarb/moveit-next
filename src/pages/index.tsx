@@ -6,6 +6,7 @@ import { Countdown } from '../components/Coutdown';
 
 import Head from 'next/head'
 import { ChanllegeBox } from '../components/ChallengeBox';
+import { CountdownProvider } from '../contexts/CoutdownContext';
 
 export default function Home() {
   return (
@@ -15,16 +16,19 @@ export default function Home() {
       </Head>
 
       <ExperienceBar />
-      <section>
-        <div>
-          <Profile />
-          <CompletedChanlleges />
-          <Countdown />
-        </div>
-        <div>
-          <ChanllegeBox />
-        </div>
-      </section>
+
+      <CountdownProvider>
+        <section>
+          <div>
+            <Profile />
+            <CompletedChanlleges />
+            <Countdown />
+          </div>
+          <div>
+            <ChanllegeBox />
+          </div>
+        </section>
+      </CountdownProvider>
     </div>
 
 
